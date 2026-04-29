@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Glassmorphism CV Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-100 min-h-screen py-8 px-4 sm:px-6 lg:px-8 text-slate-800">
+
+  <div
+    class="max-w-[1100px] mx-auto bg-white rounded-3xl shadow-xl flex flex-col lg:flex-row overflow-hidden border border-slate-200/60">
+
+    <!-- SIDEBAR -->
+    <aside
+      class="w-full lg:w-[320px] bg-[#FAFBFF] border-r border-slate-100 p-8 lg:p-10 flex flex-col relative overflow-hidden flex-shrink-0">
+      <!-- Decorative background blur -->
+      <div class="absolute -top-16 -left-16 w-64 h-64 bg-purple-100/50 rounded-full blur-3xl z-0"></div>
+
+      <div class="relative z-10 mb-10 mt-4">
+        <div id="avatar-initials"
+          class="w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-400 shadow-lg mb-6 flex items-center justify-center border-4 border-white text-white font-bold text-2xl">
+          <!-- Injected via JS -->
+        </div>
+
+        <h1 id="name" class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-none mb-2">
+          <!-- Injected via JS -->
+        </h1>
+        <div id="title"
+          class="text-[17px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500 mb-8 inline-block">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+
+      <!-- Contact Block -->
+      <div id="contacts-list" class="relative z-10 flex flex-col gap-5 text-[14px] text-slate-600 font-medium">
+        <!-- Injected via JS -->
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 p-8 lg:p-14 relative bg-white overflow-y-auto">
+
+      <!-- Timeline Line Wrapper -->
+      <div class="lg:ml-4 border-l-2 border-slate-100 pl-6 lg:pl-10 space-y-12 pb-8">
+
+        <!-- INTRO / PROFILE -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-5 mt-0 leading-none">Profile</h2>
+          <div id="profile-content" class="text-[15px] leading-relaxed text-slate-600 max-w-3xl space-y-4">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Experience</h2>
+          <div id="experience-list" class="space-y-4">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Skills</h2>
+          <div id="skills-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- EDUCATION & CREDENTIALS -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Education & Credentials</h2>
+          <div id="education-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- SELECTED PROJECTS -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Selected Projects</h2>
+          <div id="projects-list" class="space-y-4">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- OTHER WORK -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Other Work</h2>
+          <div id="other-work-list" class="space-y-4">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- ONLINE SECTION -->
+        <section class="relative">
+          <div
+            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Online</h2>
+          <div id="online-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+      </div>
+
+      <!-- FOOTER -->
+      <footer
+        class="mt-8 pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] font-mono text-slate-400">
+        <span id="footer-text" class="tracking-widest uppercase"></span>
+        <a id="footer-link" href="#" target="_blank"
+          class="hover:text-purple-600 transition-colors uppercase tracking-widest"></a>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- CV JSON DATA -->
+  <script type="application/json" id="cv-data">
+  {
+    "personal": {
+      "initials": "AR",
+      "firstName": "Alex",
+      "lastName": "Rivera",
+      "title": "Senior Product Engineer",
+      "contacts":[
+        {
+          "value": "alex.rivera@example.com",
+          "link": "mailto:alex.rivera@example.com",
+          "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z\"></path>"
+        },
+        {
+          "value": "alexrivera.dev",
+          "link": "https://alexrivera.dev",
+          "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1\"></path>"
+        },
+        {
+          "value": "github.com/arivera",
+          "link": "https://github.com/arivera",
+          "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4\"></path>"
+        },
+        {
+          "value": "Austin, TX · Hybrid",
+          "link": null,
+          "iconSvg": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z\"></path><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 11a3 3 0 11-6 0 3 3 0 016 0z\"></path>"
+        },
+        {
+          "value": "LinkedIn: Alex Rivera",
+          "link": "https://linkedin.com/in/arivera",
+          "iconSvg": "<path d=\"M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z\" />"
+        }
+      ]
+    },
+    "profile":[
+      "I build <strong class=\"font-bold text-slate-900\">scalable, high-performance web applications</strong> that focus on delivering exceptional user experiences. My process bridges the gap between complex backend systems and intuitive frontend interfaces.",
+      "With over 6 years of experience scaling tech products, I lead architectures, mentor junior developers, and drive agile workflows. I have successfully migrated legacy codebases to modern frameworks and built cloud-native dashboards used by thousands of daily active users."
+    ],
+    "experience":[
+      {
+        "role": "Lead Software Engineer",
+        "company": "TechNova Solutions",
+        "dates": "2022 – Present",
+        "dateClass": "bg-purple-100/70 text-purple-700",
+        "type": "bullets",
+        "content":[
+          "Spearheaded the migration of a legacy monolithic application to a decoupled Next.js and Node.js microservices architecture.",
+          "Mentored a team of 4 frontend developers, establishing CI/CD pipelines and rigorous code review processes.",
+          "Improved core web vitals by 40%, directly increasing user retention and engagement metrics."
+        ]
+      },
+      {
+        "role": "Frontend Developer",
+        "company": "Creative Cloud Inc.",
+        "dates": "2019 – 2022",
+        "dateClass": "bg-slate-200/60 text-slate-600",
+        "type": "paragraph",
+        "content": "Designed and developed responsive web interfaces using React and Tailwind CSS. Collaborated directly with product designers to ensure pixel-perfect, accessible UI components across all devices."
+      },
+      {
+        "role": "Junior Web Developer",
+        "company": "StartUp Studio",
+        "dates": "2018 – 2019",
+        "dateClass": "bg-slate-200/60 text-slate-600",
+        "type": "paragraph",
+        "content": "Assisted in developing client-facing web portals and internal admin dashboards. Gained early exposure to agile methodologies, version control, and production software workflows."
+      }
+    ],
+    "skills":[
+      {
+        "category": "Frontend Core",
+        "pillStyle": "bg-white border border-slate-200/80 rounded-lg text-[13px] font-medium text-slate-700 shadow-sm",
+        "items":["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "Framer Motion", "Jest"]
+      },
+      {
+        "category": "Backend & Cloud",
+        "pillStyle": "bg-transparent border border-slate-200 rounded-lg text-[13px] font-medium text-slate-600",
+        "items":["Node.js", "Express", "PostgreSQL", "MongoDB", "AWS", "Docker", "REST / GraphQL"]
+      },
+      {
+        "category": "Architecture",
+        "pillStyle": "bg-transparent border border-slate-200 rounded-lg text-[13px] font-medium text-slate-600",
+        "items":["Microservices", "System Design", "CI/CD", "Serverless", "Performance Tuning"]
+      },
+      {
+        "category": "Tools",
+        "pillStyle": "bg-transparent border border-slate-200 rounded-lg text-[13px] font-medium text-slate-600",
+        "items":["Git", "GitHub Actions", "Figma", "VS Code", "Jira", "Postman"]
+      }
+    ],
+    "education":[
+      {
+        "icon": "🎓",
+        "title": "B.Sc. in Computer Science",
+        "subtitle": "University of Texas at Austin",
+        "dates": "2014 – 2018"
+      },
+      {
+        "icon": "☁️",
+        "title": "AWS Certified Solutions Architect",
+        "subtitle": "Amazon Web Services",
+        "dates": "Oct 2021"
+      },
+      {
+        "icon": "🚀",
+        "title": "Advanced React Patterns",
+        "subtitle": "Frontend Masters",
+        "dates": "Mar 2020"
+      }
+    ],
+    "projects":[
+      {
+        "title": "E-Commerce Merchant Dashboard",
+        "stack": "Next.js · TypeScript · Tailwind CSS · Stripe",
+        "status": "Live",
+        "statusClass": "bg-green-100/70 text-green-700",
+        "description": "A comprehensive B2B dashboard for merchants to manage inventory, track analytics in real-time, and process payments. Scaled to support over 500 active storefronts.",
+        "link": "https://dashboard.example.com",
+        "linkText": "↗ dashboard.example.com"
+      },
+      {
+        "title": "SaaS Platform Migration",
+        "stack": "React · Node.js · Docker · Kubernetes",
+        "status": "Completed",
+        "statusClass": "bg-blue-100/70 text-blue-700",
+        "description": "Led the architectural overhaul of an outdated SaaS platform. Containerized applications resulting in 99.9% uptime and streamlined deployment cycles.",
+        "link": null,
+        "linkText": null
+      }
+    ],
+    "otherWork":[
+      {
+        "title": "DevCLI Tracker",
+        "subtitle": "Open source · github.com/arivera/devcli",
+        "link": "https://github.com/arivera/devcli",
+        "status": "Open Source",
+        "statusClass": "bg-slate-200/60 text-slate-600",
+        "description": "A terminal CLI tool written in Node.js for developers to track project time and bootstrap templates locally. 200+ stars on GitHub."
+      },
+      {
+        "title": "Tech Blog",
+        "subtitle": "Personal writing · alexrivera.dev/blog",
+        "link": "https://alexrivera.dev/blog",
+        "status": "Live",
+        "statusClass": "bg-green-100/70 text-green-700",
+        "description": "Regularly publish deep-dives on frontend architecture, state management, and career progression in tech. Averages 5,000 monthly readers."
+      }
+    ],
+    "online":[
+      {
+        "label": "Portfolio & Case Studies",
+        "value": "alexrivera.dev",
+        "link": "https://alexrivera.dev"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/arivera",
+        "link": "https://github.com/arivera"
+      },
+      {
+        "label": "Twitter / X",
+        "value": "@alexrivera_dev",
+        "link": "https://twitter.com/alexrivera_dev"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "Alex Rivera",
+        "link": "https://linkedin.com/in/arivera"
+      }
+    ],
+    "footer": {
+      "text": "ALEX RIVERA · CV · 2026",
+      "linkText": "↗ Full portfolio & case studies",
+      "linkUrl": "https://alexrivera.dev"
+    }
+  }
+  </script>
+
+  <!-- DATA INJECTION SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const dataText = document.getElementById('cv-data').textContent;
+      const data = JSON.parse(dataText);
+
+      // --- Personal Info ---
+      document.getElementById('avatar-initials').textContent = data.personal.initials;
+      document.getElementById('name').innerHTML = `${data.personal.firstName}<br>${data.personal.lastName}`;
+      document.getElementById('title').textContent = data.personal.title;
+
+      // --- Contacts ---
+      const contactsContainer = document.getElementById('contacts-list');
+      data.personal.contacts.forEach(contact => {
+        const iconHtml = `<svg class="w-5 h-5" fill="${contact.value.includes('LinkedIn') ? 'currentColor' : 'none'}" stroke="${contact.value.includes('LinkedIn') ? 'none' : 'currentColor'}" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">${contact.iconSvg}</svg>`;
+
+        let wrapperHtml = '';
+        if (contact.link) {
+          wrapperHtml = `
+            <a href="${contact.link}" target="_blank" class="flex items-center gap-4 hover:text-purple-600 transition-colors group">
+              <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-purple-50 group-hover:text-purple-600 transition-colors text-slate-400">
+                ${iconHtml}
+              </div>
+              <span class="truncate">${contact.value}</span>
+            </a>
+          `;
+        } else {
+          wrapperHtml = `
+            <div class="flex items-center gap-4 group">
+              <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
+                ${iconHtml}
+              </div>
+              <span class="truncate">${contact.value}</span>
+            </div>
+          `;
+        }
+        contactsContainer.insertAdjacentHTML('beforeend', wrapperHtml);
+      });
+
+      // --- Profile ---
+      const profileContainer = document.getElementById('profile-content');
+      data.profile.forEach(paragraph => {
+        profileContainer.insertAdjacentHTML('beforeend', `<p>${paragraph}</p>`);
+      });
+
+      // --- Experience ---
+      const expContainer = document.getElementById('experience-list');
+      data.experience.forEach(exp => {
+        let contentHtml = '';
+        if (exp.type === 'bullets') {
+          const listItems = exp.content.map(item => `<li class="pl-1">${item}</li>`).join('');
+          contentHtml = `<ul class="text-[14px] text-slate-600 leading-relaxed list-disc list-outside ml-4 space-y-1.5 marker:text-slate-300">${listItems}</ul>`;
+        } else {
+          contentHtml = `<p class="text-[14px] text-slate-600 leading-relaxed">${exp.content}</p>`;
+        }
+
+        expContainer.insertAdjacentHTML('beforeend', `
+          <div class="bg-slate-50/70 hover:bg-slate-50 transition-colors border border-slate-100 rounded-2xl p-6 group">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">${exp.role}</h3>
+                <p class="text-[14px] font-medium text-slate-500 mt-0.5">${exp.company}</p>
+              </div>
+              <span class="inline-flex px-3 py-1 ${exp.dateClass} text-[12px] font-semibold tracking-wide rounded-lg whitespace-nowrap">${exp.dates}</span>
+            </div>
+            ${contentHtml}
+          </div>
+        `);
+      });
+
+      // --- Skills ---
+      const skillsContainer = document.getElementById('skills-list');
+      data.skills.forEach(skillGroup => {
+        const pillsHtml = skillGroup.items.map(item => `<span class="px-3 py-1.5 ${skillGroup.pillStyle}">${item}</span>`).join('');
+
+        skillsContainer.insertAdjacentHTML('beforeend', `
+          <div class="bg-slate-50/70 border border-slate-100 rounded-2xl p-6 hover:shadow-sm transition-shadow">
+            <h3 class="text-[11px] font-bold tracking-[0.15em] uppercase text-purple-600 mb-4 text-center">${skillGroup.category}</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+              ${pillsHtml}
+            </div>
+          </div>
+        `);
+      });
+
+      // --- Education ---
+      const eduContainer = document.getElementById('education-list');
+      data.education.forEach(edu => {
+        eduContainer.insertAdjacentHTML('beforeend', `
+          <div class="bg-slate-50/70 border border-slate-100 rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center flex-shrink-0 text-lg">
+                  ${edu.icon}
+                </div>
+                <h3 class="text-[15px] font-bold text-slate-900 leading-snug">${edu.title}</h3>
+              </div>
+              <p class="text-[13px] text-slate-500 ml-11">${edu.subtitle}</p>
+            </div>
+            <div class="mt-4 ml-11">
+              <span class="inline-flex px-2.5 py-1 bg-slate-200/60 text-slate-600 text-[11px] font-semibold tracking-wide rounded-md">${edu.dates}</span>
+            </div>
+          </div>
+        `);
+      });
+
+      // --- Selected Projects ---
+      const projectsContainer = document.getElementById('projects-list');
+      data.projects.forEach(proj => {
+        const linkHtml = proj.link ? `<a class="inline-block mt-3 text-[13px] font-semibold text-purple-600 hover:text-purple-700 transition-colors" href="${proj.link}" target="_blank">${proj.linkText}</a>` : '';
+
+        projectsContainer.insertAdjacentHTML('beforeend', `
+          <div class="bg-slate-50/70 hover:bg-slate-50 transition-colors border border-slate-100 rounded-2xl p-6 group">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">${proj.title}</h3>
+                <p class="text-[12px] font-mono text-purple-500 mt-1">${proj.stack}</p>
+              </div>
+              <span class="inline-flex px-2.5 py-1 ${proj.statusClass} text-[11px] font-bold uppercase tracking-widest rounded whitespace-nowrap">${proj.status}</span>
+            </div>
+            <p class="text-[14px] text-slate-600 leading-relaxed mt-2">${proj.description}</p>
+            ${linkHtml}
+          </div>
+        `);
+      });
+
+      // --- Other Work ---
+      const otherContainer = document.getElementById('other-work-list');
+      data.otherWork.forEach(work => {
+        otherContainer.insertAdjacentHTML('beforeend', `
+          <div class="bg-slate-50/70 hover:bg-slate-50 transition-colors border border-slate-100 rounded-2xl p-6 group">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+              <div>
+                <h3 class="text-[16px] font-bold text-slate-900">${work.title}</h3>
+                <p class="text-[13px] text-slate-500 mt-0.5">
+                  ${work.subtitle.split('·')[0]} · 
+                  <a href="${work.link}" target="_blank" class="text-purple-600 hover:underline">${work.subtitle.split('·')[1].trim()}</a>
+                </p>
+              </div>
+              <span class="inline-flex px-2.5 py-1 ${work.statusClass} text-[11px] font-bold uppercase tracking-widest rounded whitespace-nowrap">${work.status}</span>
+            </div>
+            <p class="text-[14px] text-slate-600 leading-relaxed mt-2">${work.description}</p>
+          </div>
+        `);
+      });
+
+      // --- Online Links ---
+      const onlineContainer = document.getElementById('online-list');
+      data.online.forEach(item => {
+        const linkHtml = item.link
+          ? `<a href="${item.link}" target="_blank" class="text-[13px] text-purple-600 hover:text-purple-700 truncate">${item.value}</a>`
+          : `<div class="text-[13px] text-slate-500">${item.value}</div>`;
+
+        onlineContainer.insertAdjacentHTML('beforeend', `
+          <div class="bg-slate-50/70 border border-slate-100 rounded-xl p-4 flex flex-col gap-1">
+            <div class="text-[13px] font-bold text-slate-900">${item.label}</div>
+            ${linkHtml}
+          </div>
+        `);
+      });
+
+      // --- Footer ---
+      document.getElementById('footer-text').textContent = data.footer.text;
+      const footerLink = document.getElementById('footer-link');
+      footerLink.textContent = data.footer.linkText;
+      footerLink.href = data.footer.linkUrl;
+    });
+  </script>
+</body>
+
+</html>
