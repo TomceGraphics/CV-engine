@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Dukoski — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --ink: #0f0f0f;
+      --paper: #f7f5f0;
+      --mid: #7a7570;
+      --accent: #c8421a;
+      --rule: #d8d4ce;
+      --col-left: 220px;
+    }
+
+    html {
+      font-size: 14px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Instrument Sans', sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── PAGE ── */
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 64px 48px;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 24px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 48px;
+    }
+
+    .name-block h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3.2rem;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .title-tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .contact-block {
+      text-align: right;
+      font-size: 0.82rem;
+      color: var(--mid);
+      line-height: 1.8;
+      font-family: 'DM Mono', monospace;
+    }
+
+    .contact-block a {
+      color: var(--mid);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .contact-block a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ── LAYOUT ── */
+    .body-grid {
+      display: grid;
+      grid-template-columns: var(--col-left) 1fr;
+      gap: 0 48px;
+    }
+
+    /* ── SECTION ── */
+    section {
+      display: contents;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      padding-top: 4px;
+      padding-bottom: 32px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .section-content {
+      padding-bottom: 32px;
+      border-top: 1px solid var(--rule);
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--ink);
+      max-width: 560px;
+      padding-top: 4px;
+    }
+
+    .intro strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ── EXPERIENCE ── */
+    .entry {
+      margin-bottom: 28px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 3px;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--ink);
+    }
+
+    .entry-company {
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .entry-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--mid);
+      white-space: nowrap;
+      letter-spacing: 0.05em;
+    }
+
+    .entry p {
+      font-size: 0.85rem;
+      color: #444;
+      line-height: 1.6;
+      margin-top: 4px;
+    }
+
+    .entry ul {
+      margin-top: 6px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .entry ul li {
+      font-size: 0.83rem;
+      color: #444;
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .entry ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--rule);
+      font-size: 0.75rem;
+    }
+
+    /* ── PROJECTS ── */
+    .project {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .project-name {
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .project-status {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      background: var(--rule);
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+
+    .project-stack {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+      letter-spacing: 0.04em;
+    }
+
+    .project p {
+      font-size: 0.83rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 5px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.67rem;
+      color: var(--mid);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .project-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ── SKILLS ── */
+    .skill-group {
+      margin-bottom: 16px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 6px;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .pill {
+      font-size: 0.78rem;
+      padding: 3px 10px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--ink);
+      background: transparent;
+      font-family: 'Instrument Sans', sans-serif;
+    }
+
+    .pill.primary {
+      border-color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ── EDUCATION / MISC ── */
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+
+    .list-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .list-item-main {
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .list-item-sub {
+      font-size: 0.78rem;
+      color: var(--mid);
+    }
+
+    .list-item-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--mid);
+      white-space: nowrap;
+    }
+
+    /* ── FOOTER ── */
+    .cv-footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cv-footer span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--rule);
+      letter-spacing: 0.06em;
+    }
+
+    .cv-footer a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--mid);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body {
+        background: white;
+        font-size: 12px;
+      }
+
+      .page {
+        padding: 32px;
+      }
+
+      .cv-footer {
+        display: none;
+      }
+
+      a {
+        color: inherit !important;
+        border: none !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --col-left: 120px;
+      }
+
+      .page {
+        padding: 32px 24px;
+      }
+
+      header {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-block {
+        text-align: left;
+      }
+
+      .name-block h1 {
+        font-size: 2.4rem;
+      }
+
+      .body-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .section-label {
+        border-top: none;
+        padding-top: 24px;
+        padding-bottom: 6px;
+      }
+
+      .section-content {
+        border-top: none;
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="name-block">
+        <h1>Thomas<br>Dukoski</h1>
+        <span class="title-tag">Design Technologist</span>
+      </div>
+      <div class="contact-block">
+        <div><a href="mailto:tomce.graphics@gmail.com">tomce.graphics@gmail.com</a></div>
+        <div><a href="https://thomas-graphics.netlify.app" target="_blank">thomas-graphics.netlify.app</a></div>
+        <div><a href="https://symptomlink.netlify.app" target="_blank">symptomlink.netlify.app</a></div>
+        <div>Ohrid, North Macedonia · Remote</div>
+        <div><a href="https://www.linkedin.com/in/thomas-dukoski" target="_blank">LinkedIn: Thomas Dukoski</a></div>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="body-grid">
+
+      <!-- INTRO -->
+      <section>
+        <div class="section-label">Profile</div>
+        <div class="section-content">
+          <p class="intro">
+            I build <strong>functional, interactive prototypes</strong> that prove a product's UX before a single
+            engineering sprint is spent. My process goes from zero — research, personas, information architecture, flows
+            — straight to working code with real data and real interactions. No static handoffs.
+            <br><br>
+            I sit at the intersection of UX thinking and frontend engineering, using AI as a force multiplier: I direct,
+            architect, and own the output. I've shipped a full-stack AI triage system used in a live demo
+            context, pitched a digital solution to a city government, and built production-grade tooling — all without a
+            team.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section>
+        <div class="section-label">Selected<br>Projects</div>
+        <div class="section-content">
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-name">SymptomLink (DocMatch)</span>
+              <span class="project-status">Live</span>
+            </div>
+            <div class="project-stack">Vanilla JS · Tailwind CSS · Supabase · Gemini 2.5 Flash</div>
+            <p>AI-powered medical triage system. Patients describe symptoms in natural language; the system routes them
+              to the correct specialist. Built the full product: provider dashboard, patient records, booking system,
+              and graceful AI fallback logic. Proof that I can architect and ship a complete, production-grade product
+              with AI integration.</p>
+            <a class="project-link" href="https://symptomlink.netlify.app" target="_blank">↗ symptomlink.netlify.app</a>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-name">Digital Parking Solution — City of Ohrid</span>
+              <span class="project-status">Pitch accepted</span>
+            </div>
+            <div class="project-stack">Full UX research · Functional prototype · Institutional pitch</div>
+            <p>Designed and built a digital parking management system for the City of Ohrid. Ran the full process — user
+              research, system architecture, working prototype — and pitched to city officials. Pitch accepted.
+              Demonstrates ability to take a real-world problem, produce a credible solution, and get institutional
+              buy-in.</p>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-name">QR Restaurant Ordering System</span>
+              <span class="project-status">Built</span>
+            </div>
+            <div class="project-stack">Vanilla JS · Tailwind CSS · Supabase</div>
+            <p>Full-stack restaurant automation MVP — QR-based ordering, real-time kitchen updates, and order
+              management. Built end-to-end.</p>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-name">IoT Weather Station</span>
+              <span class="project-status">In progress</span>
+            </div>
+            <div class="project-stack">ESP32-C3 · Decoupled architecture · System design</div>
+            <p>Designed a decoupled IoT system where the ESP32-C3 handles sensor data only — a deliberate architectural
+              decision over monolithic ESP32-D after evaluating RAM constraints and Wi-Fi instability risk. Proof that I
+              think at the system level, not just the interface level.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section>
+        <div class="section-label">Experience</div>
+        <div class="section-content">
+
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <div class="entry-title">Freelance Design Technologist</div>
+                <div class="entry-company">Independent</div>
+              </div>
+              <span class="entry-date">2021 – Present</span>
+            </div>
+            <ul>
+              <li>Delivered end-to-end product work: UX research, information architecture, functional prototypes with
+                real data layers</li>
+              <li>Built and deployed 3+ client projects; total earned €200–€1,000 across early engagements</li>
+              <li>Managed all client communication, scoping, and delivery independently</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <div class="entry-title">Web Designer</div>
+                <div class="entry-company">WeaveMedia</div>
+              </div>
+              <span class="entry-date">2023 – 2024</span>
+            </div>
+            <p>Designed and developed websites for multiple clients. Handled end-to-end delivery from brief to
+              production.</p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <div class="entry-title">Software Development Intern</div>
+                <div class="entry-company">Infobiro</div>
+              </div>
+              <span class="entry-date">2022 – 2023</span>
+            </div>
+            <p>Assisted in developing Windows desktop applications. Early exposure to production software workflows and
+              team-based development.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section>
+        <div class="section-label">Skills</div>
+        <div class="section-content">
+
+          <div class="skill-group">
+            <div class="skill-group-label">Core delivery</div>
+            <div class="skill-pills">
+              <span class="pill primary">HTML / CSS</span>
+              <span class="pill primary">Vanilla JS (ES6+)</span>
+              <span class="pill primary">Tailwind CSS</span>
+              <span class="pill primary">Supabase</span>
+              <span class="pill primary">Turso</span>
+              <span class="pill primary">GSAP</span>
+              <span class="pill primary">AI Prompt Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-label">Data & backend</div>
+            <div class="skill-pills">
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">IndexedDB</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">SQLite</span>
+              <span class="pill">Tur</span>
+              <span class="pill">Supabase Auth</span>
+              <span class="pill">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-label">UX process</div>
+            <div class="skill-pills">
+              <span class="pill">User research</span>
+              <span class="pill">HCI thinking</span>
+              <span class="pill">User personas</span>
+              <span class="pill">Information architecture</span>
+              <span class="pill">Wireframing</span>
+              <span class="pill">Usability testing</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-label">Tools</div>
+            <div class="skill-pills">
+              <span class="pill">Figma</span>
+              <span class="pill">Adobe Suite</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">Obsidian</span>
+              <span class="pill">Gemini API</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <div class="section-label">Education &<br>Credentials</div>
+        <div class="section-content">
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">B.Sc. Software &amp; Multimedia Engineering</div>
+              <div class="list-item-sub">St. Paul the Apostle University (ISVMA), Ohrid</div>
+            </div>
+            <span class="list-item-date">2022 – Present</span>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">Google UX Design Certificate</div>
+              <div class="list-item-sub">Google — Certified</div>
+            </div>
+            <span class="list-item-date">Feb 2021</span>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">JavaScript &amp; React JS</div>
+              <div class="list-item-sub">Fireship</div>
+            </div>
+            <span class="list-item-date">Dec 2022</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- OTHER WORK -->
+      <section>
+        <div class="section-label">Other Work</div>
+        <div class="section-content">
+
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <div class="entry-title">Gym Core</div>
+                <div class="entry-company" style="font-size:0.78rem;">Workout tracking app · <a
+                    href="https://gym-core.netlify.app" target="_blank"
+                    style="color:var(--accent);text-decoration:none;">gym-core.netlify.app</a></div>
+              </div>
+              <span class="entry-date">Live</span>
+            </div>
+            <p>Workout tracking application built for personal use. Design tokens, Tailwind CSS. Built because existing
+              solutions were bloated — demonstrates the same intolerance for unnecessary complexity applied to personal
+              tooling.</p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <div class="entry-title">Prompt Library</div>
+                <div class="entry-company" style="font-size:0.78rem;">AI prompt curation tool · <a
+                    href="https://prompt-core.netlify.app" target="_blank"
+                    style="color:var(--accent);text-decoration:none;">prompt-core.netlify.app</a></div>
+              </div>
+              <span class="entry-date">Live</span>
+            </div>
+            <p>Curated, searchable library of structured AI prompts. Demonstrates applied understanding of prompt
+              engineering beyond buzzword-level — this is how I actually work with LLMs.</p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <div>
+                <div class="entry-title">Graph Visualizer</div>
+                <div class="entry-company" style="font-size:0.78rem;">Open source · <a
+                    href="https://github.com/TomceGraphics/graph-visualizer" target="_blank"
+                    style="color:var(--accent);text-decoration:none;">github.com/TomceGraphics</a></div>
+              </div>
+              <span class="entry-date">Open source</span>
+            </div>
+            <p>Browser-based tool for visualizing and practicing graph algorithms. Vanilla JS, Tailwind. Built for
+              learning — published because it was useful enough to share.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- LINKS -->
+      <section>
+        <div class="section-label">Online</div>
+        <div class="section-content">
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">Portfolio &amp; Case Studies</div>
+              <div class="list-item-sub"><a href="https://thomas-graphics.netlify.app" target="_blank"
+                  style="color: var(--mid); text-decoration: none; border-bottom: 1px solid var(--rule);">thomas-graphics.netlify.app</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">Live Demo — SymptomLink</div>
+              <div class="list-item-sub"><a href="https://symptomlink.netlify.app" target="_blank"
+                  style="color: var(--mid); text-decoration: none; border-bottom: 1px solid var(--rule);">symptomlink.netlify.app</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">Dribbble</div>
+              <div class="list-item-sub">@Thomas Dukoski</div>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <div>
+              <div class="list-item-main">LinkedIn</div>
+              <div class="list-item-sub">Thomas Dukoski</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="cv-footer">
+      <span>THOMAS DUKOSKI · CV · 2026</span>
+      <a href="https://thomas-graphics.netlify.app" target="_blank">↗ Full portfolio & case studies</a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
