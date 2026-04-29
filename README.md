@@ -77,8 +77,8 @@ python html_to_pdf.py templates/*.html --output-dir exports/
 
 ## Using the Editable CV Templates
 
-Included in this repository are modern, Tailwind-based CV templates (`cv_template_modern_minimal.html` and `cv_template_creative_bold.html`).
-and 3 more newer, modern templates (`cv.html`, `cv2.html`, `cv3.html`).
+Included in this repository are basic, Tailwind-based CV templates (`cv_template_modern_minimal.html`, `cv_template_creative_bold.html`, `cv_template_modern_glass.html`)
+`cv.html` is the actual cv i personally use and it gets updated occasionally. Feel free to use it as a reference or a starting point.
 
 These templates are designed so you don't need to write or edit HTML to update your CV. 
 

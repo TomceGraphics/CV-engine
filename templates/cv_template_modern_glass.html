@@ -19,133 +19,129 @@
   </style>
 </head>
 
-<body class="bg-slate-100 min-h-screen py-8 px-4 sm:px-6 lg:px-8 text-slate-800">
+<body class="bg-white flex flex-col lg:flex-row text-slate-800 font-sans">
 
-  <div
-    class="max-w-[1100px] mx-auto bg-white rounded-3xl shadow-xl flex flex-col lg:flex-row overflow-hidden border border-slate-200/60">
+  <!-- SIDEBAR -->
+  <aside
+    class="w-full lg:w-[320px] bg-[#FAFBFF] border-r border-slate-100 p-8 lg:p-10 flex flex-col relative overflow-hidden flex-shrink-0">
+    <!-- Decorative background blur -->
+    <div class="absolute -top-16 -left-16 w-64 h-64 bg-purple-100/50 rounded-full blur-3xl z-0"></div>
 
-    <!-- SIDEBAR -->
-    <aside
-      class="w-full lg:w-[320px] bg-[#FAFBFF] border-r border-slate-100 p-8 lg:p-10 flex flex-col relative overflow-hidden flex-shrink-0">
-      <!-- Decorative background blur -->
-      <div class="absolute -top-16 -left-16 w-64 h-64 bg-purple-100/50 rounded-full blur-3xl z-0"></div>
-
-      <div class="relative z-10 mb-10 mt-4">
-        <div id="avatar-initials"
-          class="w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-400 shadow-lg mb-6 flex items-center justify-center border-4 border-white text-white font-bold text-2xl">
-          <!-- Injected via JS -->
-        </div>
-
-        <h1 id="name" class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-none mb-2">
-          <!-- Injected via JS -->
-        </h1>
-        <div id="title"
-          class="text-[17px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500 mb-8 inline-block">
-          <!-- Injected via JS -->
-        </div>
-      </div>
-
-      <!-- Contact Block -->
-      <div id="contacts-list" class="relative z-10 flex flex-col gap-5 text-[14px] text-slate-600 font-medium">
+    <div class="relative z-10 mb-10 mt-4">
+      <div id="avatar-initials"
+        class="w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-400 shadow-lg mb-6 flex items-center justify-center border-4 border-white text-white font-bold text-2xl">
         <!-- Injected via JS -->
       </div>
-    </aside>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1 p-8 lg:p-14 relative bg-white overflow-y-auto">
-
-      <!-- Timeline Line Wrapper -->
-      <div class="lg:ml-4 border-l-2 border-slate-100 pl-6 lg:pl-10 space-y-12 pb-8">
-
-        <!-- INTRO / PROFILE -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-5 mt-0 leading-none">Profile</h2>
-          <div id="profile-content" class="text-[15px] leading-relaxed text-slate-600 max-w-3xl space-y-4">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Experience</h2>
-          <div id="experience-list" class="space-y-4">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Skills</h2>
-          <div id="skills-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
-        <!-- EDUCATION & CREDENTIALS -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Education & Credentials</h2>
-          <div id="education-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
-        <!-- SELECTED PROJECTS -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Selected Projects</h2>
-          <div id="projects-list" class="space-y-4">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
-        <!-- OTHER WORK -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Other Work</h2>
-          <div id="other-work-list" class="space-y-4">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
-        <!-- ONLINE SECTION -->
-        <section class="relative">
-          <div
-            class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Online</h2>
-          <div id="online-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <!-- Injected via JS -->
-          </div>
-        </section>
-
+      <h1 id="name" class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-none mb-2">
+        <!-- Injected via JS -->
+      </h1>
+      <div id="title"
+        class="text-[17px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500 mb-8 inline-block">
+        <!-- Injected via JS -->
       </div>
+    </div>
 
-      <!-- FOOTER -->
-      <footer
-        class="mt-8 pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] font-mono text-slate-400">
-        <span id="footer-text" class="tracking-widest uppercase"></span>
-        <a id="footer-link" href="#" target="_blank"
-          class="hover:text-purple-600 transition-colors uppercase tracking-widest"></a>
-      </footer>
+    <!-- Contact Block -->
+    <div id="contacts-list" class="relative z-10 flex flex-col gap-5 text-[14px] text-slate-600 font-medium">
+      <!-- Injected via JS -->
+    </div>
+  </aside>
 
-    </main>
-  </div>
+  <!-- MAIN CONTENT -->
+  <main class="flex-1 p-8 lg:p-14 relative bg-white">
+
+    <!-- Timeline Line Wrapper -->
+    <div class="lg:ml-4 border-l-2 border-slate-100 pl-6 lg:pl-10 space-y-12 pb-8">
+
+      <!-- INTRO / PROFILE -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-5 mt-0 leading-none">Profile</h2>
+        <div id="profile-content" class="text-[15px] leading-relaxed text-slate-600 max-w-3xl space-y-4">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Experience</h2>
+        <div id="experience-list" class="space-y-4">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Skills</h2>
+        <div id="skills-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- EDUCATION & CREDENTIALS -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Education & Credentials</h2>
+        <div id="education-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- SELECTED PROJECTS -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Selected Projects</h2>
+        <div id="projects-list" class="space-y-4">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- OTHER WORK -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Other Work</h2>
+        <div id="other-work-list" class="space-y-4">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <!-- ONLINE SECTION -->
+      <section class="relative">
+        <div
+          class="absolute -left-[35px] lg:-left-[51px] top-1.5 w-[18px] h-[18px] bg-purple-600 rounded-full border-[4px] border-white shadow-sm">
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800 tracking-tight mb-6 leading-none">Online</h2>
+        <div id="online-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+      class="mt-8 pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] font-mono text-slate-400">
+      <span id="footer-text" class="tracking-widest uppercase"></span>
+      <a id="footer-link" href="#" target="_blank"
+        class="hover:text-purple-600 transition-colors uppercase tracking-widest"></a>
+    </footer>
+
+  </main>
 
   <!-- CV JSON DATA -->
   <script type="application/json" id="cv-data">
